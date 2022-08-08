@@ -23,7 +23,7 @@ which you want.
 
 ```
 $ clock 2022 --add sin
-Multiple time zones matched '{text}.' Which is correct?
+Multiple time zones matched 'sin'. Which is correct?
 0. Europe/Chisinau
 1. Singapore
 2. Europe/Helsinki

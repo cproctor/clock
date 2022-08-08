@@ -17,7 +17,7 @@ def parse_timezone(text):
     if len(matches) == 0:
         raise ValueError(f"No timezones matched '{text}'.")
     elif len(matches) > 1:
-        click.echo("Multiple time zones matched '{text}.' Which is correct?")
+        click.echo(f"Multiple time zones matched '{text}'. Which is correct?")
         for i, choice in enumerate(matches):
             click.echo(f"{i}. {choice}")
         choice = click.prompt('> ', type=click.IntRange(min=0, max_open=len(matches)), show_choices=False)
@@ -40,10 +40,10 @@ def read_dotfile():
 
 @click.command
 @click.argument('time')
-@click.option('-t', '--timezone', help="Time zone of input time")
-@click.option('-f', '--format', 'fmt', help="Output time format")
-@click.option('-d', '--debug', is_flag=True, help="Show debug messages")
-@click.option('--add', help="Add a time zone")
+@click.option('-t', '--timezone', help="Time zone of input time.")
+@click.option('-f', '--format', 'fmt', help="Output time format.")
+@click.option('-d', '--debug', is_flag=True, help="Show debug messages.")
+@click.option('--add', help="Add a time zone.")
 def cli(time, timezone, fmt, debug, add):
     "Shows a time in multiple time zones."
     fmt = fmt or 'YYYY-MM-DD HH:mm ZZ'
