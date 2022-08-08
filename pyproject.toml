@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "clock-cli"
-version = "0.1.2"
+version = "0.1.3"
 description = "A command-line time zone converter"
 authors = ["Chris Proctor <github.com@accounts.chrisproctor.net>"]
 license = "MIT"

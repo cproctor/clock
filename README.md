@@ -22,7 +22,7 @@ Add a new time zone using `--add`. When the entered text matches multiple
 which you want. 
 
 ```
-~/Repos/clock % clock 2022 --add sin
+$ clock 2022 --add sin
 Multiple time zones matched '{text}.' Which is correct?
 0. Europe/Chisinau
 1. Singapore
