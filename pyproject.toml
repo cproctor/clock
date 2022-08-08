@@ -1,9 +1,11 @@
 [tool.poetry]
 name = "clock-cli"
-version = "0.1.1"
+version = "0.1.2"
 description = "A command-line time zone converter"
 authors = ["Chris Proctor <github.com@accounts.chrisproctor.net>"]
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/cproctor/clock"
 
 [tool.poetry.dependencies]
 python = "^3.9"
